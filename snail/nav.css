@@ -1,0 +1,59 @@
+nav {
+	margin: 27px auto 0;
+
+	position: relative  ;top: 555px; right: 80px;
+	width: 590px;
+	height: 50px;
+	background-color: white;
+	border-radius: 8px;
+	font-size: large;
+    
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: black;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 190px;
+}
+a:nth-child(2) {
+	width: 190px;
+}
+a:nth-child(3) {
+	width: 190px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 200px;
+	left: 0;
+	background-color: #851b1b;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 210px;
+	left: 180px;
+	background-color: #851b1b;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 200px;
+	left: 390px;
+	background-color: #851b1b;
+}
+
+
